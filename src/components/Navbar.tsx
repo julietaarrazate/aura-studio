@@ -19,8 +19,16 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-12">
-        <a href="#top" className="font-serif text-2xl italic tracking-tight text-foreground">
-          El PortalMateria&nbsp;Puranbsp;Magnético
+        <a href="/" className="group flex items-center gap-3 text-foreground">
+          <span
+            aria-hidden="true"
+            className="relative inline-flex h-7 w-7 items-center justify-center rounded-full border border-foreground/70 transition-transform duration-700 group-hover:rotate-45"
+          >
+            <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
+          </span>
+          <span className="font-serif text-xl italic leading-none tracking-tight md:text-2xl">
+            El Portal <span className="not-italic tracking-[0.02em]">Magnético</span>
+          </span>
         </a>
         <div className="hidden items-center gap-10 text-[11px] uppercase tracking-[0.24em] text-foreground md:flex">
           <a href="#coleccion" className="transition-opacity hover:opacity-60">Colección</a>
