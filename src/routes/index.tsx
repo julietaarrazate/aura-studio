@@ -1,24 +1,30 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useLenis } from "@/hooks/use-lenis";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/sections/Hero";
+import { Manifesto } from "@/sections/Manifesto";
+import { Collection } from "@/sections/Collection";
+import { Process } from "@/sections/Process";
+import { Materials } from "@/sections/Materials";
+import { Closing } from "@/sections/Closing";
+import { Footer } from "@/sections/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  useLenis();
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="bg-background text-foreground">
+      <Navbar />
+      <Hero />
+      <Manifesto />
+      <Collection />
+      <Process />
+      <Materials />
+      <Closing />
+      <Footer />
+    </main>
   );
 }
