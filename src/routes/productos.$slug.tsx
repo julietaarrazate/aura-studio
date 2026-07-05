@@ -5,7 +5,7 @@ import { useLenis } from "@/hooks/use-lenis";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/sections/Footer";
 import { Reveal } from "@/components/Reveal";
-import { getProduct, products } from "@/lib/products";
+import { getProduct, products, type Product } from "@/lib/products";
 
 export const Route = createFileRoute("/productos/$slug")({
   loader: ({ params }) => {
@@ -60,7 +60,7 @@ function NotFoundPiece() {
 
 function ProductPage() {
   useLenis();
-  const { product } = Route.useLoaderData();
+  const { product } = Route.useLoaderData() as { product: Product };
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
