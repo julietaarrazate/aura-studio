@@ -91,6 +91,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "El Portal Magnético — Orgones y artesanías hechos a mano" },
+      { name: "description", content: "Objetos escultóricos de cristal, cobre y resina botánica. Piezas artesanales hechas en pequeños lotes, curadas al sol durante siete días." },
+      { property: "og:description", content: "Objetos escultóricos de cristal, cobre y resina botánica. Piezas artesanales hechas en pequeños lotes, curadas al sol durante siete días." },
+      { name: "twitter:description", content: "Objetos escultóricos de cristal, cobre y resina botánica. Piezas artesanales hechas en pequeños lotes, curadas al sol durante siete días." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/77efb624-c19e-4440-a90f-3963d2f88ef3" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/77efb624-c19e-4440-a90f-3963d2f88ef3" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
