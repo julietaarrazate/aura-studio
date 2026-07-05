@@ -20,7 +20,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-12">
         <a href="#top" className="font-serif text-2xl italic tracking-tight text-foreground">
-          Materia&nbsp;Pura
+          El PortalMateria&nbsp;Puranbsp;Magnético
         </a>
         <div className="hidden items-center gap-10 text-[11px] uppercase tracking-[0.24em] text-foreground md:flex">
           <a href="#coleccion" className="transition-opacity hover:opacity-60">Colección</a>

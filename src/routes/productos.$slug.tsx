@@ -17,13 +17,13 @@ export const Route = createFileRoute("/productos/$slug")({
     if (!loaderData) {
       return {
         meta: [
-          { title: "Pieza no encontrada — Materia Pura" },
+          { title: "Pieza no encontrada — El Portal Magnético" },
           { name: "robots", content: "noindex" },
         ],
       };
     }
     const { product } = loaderData;
-    const title = `${product.name} — Materia Pura`;
+    const title = `${product.name} — El Portal Magnético`;
     return {
       meta: [
         { title },

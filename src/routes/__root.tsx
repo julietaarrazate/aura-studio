@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Materia Pura — Orgones y artesanías hechos a mano" },
+      { title: "El Portal Magnético — Orgones y artesanías hechos a mano" },
       {
         name: "description",
         content:
           "Objetos escultóricos de cristal, cobre y resina botánica. Piezas artesanales hechas en pequeños lotes, curadas al sol durante siete días.",
       },
-      { property: "og:title", content: "Materia Pura — Orgones y artesanías hechos a mano" },
+      { property: "og:title", content: "El Portal Magnético — Orgones y artesanías hechos a mano" },
       {
         property: "og:description",
         content:
